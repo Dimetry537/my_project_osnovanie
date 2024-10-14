@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счетчик нажатий</title>
+</head>
+<body>
+    <button id="click-button">Нажми меня</button>
+    <p>Количество нажатий: <span id="counter">0</span></p>
+
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="error-message" style="color: red; display: none;">Некорректный email</span>
+        <br>
+        <button id="submit-btn" disabled>Отправить</button>
+    </form>
+
+    <div>
+        <p>Время с момента загрузки страницы: <span id="timer">0</span> секунд</p>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
