@@ -1,14 +1,7 @@
 {
   "users": [
-    {
-      "id": "1c3d",
-      "name": "Alex",
-      "email": "1w@in.ru"
-    },
-    {
-      "id": "7eaa",
-      "name": "Дмитрий",
-      "email": "2@mail.ru"
-    }
+    { "id": 1, "name": "John Doe", "email": "john@example.com" },
+    { "id": 2, "name": "Jane Smith", "email": "jane@example.com" },
+    { "id": 3, "name": "Mark Brown", "email": "mark@example.com" }
   ]
 }
