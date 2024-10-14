@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Практическая работа</title>
+  <style>
+    #paragraph {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-header">Заголовок</h1>
+
+  <p id="paragraph">Это абзац текста.</p>
+  <ul id="item-list">
+    <li>Элемент списка 1</li>
+    <li>Элемент списка 2</li>
+    <li>Элемент списка 3</li>
+  </ul>
+
+  <img id="image" src="https://picsum.photos/200/300.jpg" alt="example image">
+  <a id="my-link" href="https://picsum.photos/200/300">Ссылка</a>
+
+  <button id="add-item">Добавить элемент</button>
+  <button id="remove-item">Удалить последний элемент</button>
+  <button id="change-color">Изменить цвет текста</button>
+  <button id="toggle-paragraph">Показать/скрыть абзац</button>
+
+  <div id="size-element" style="width: 150px; height: 100px; background-color: lightblue;">Этот элемент для работы с размерами</div>
+  <button id="get-size">Получить размеры</button>
+  <div id="size-output"></div>
+
+  <h2>Регистрационная форма</h2>
+  <form id="registration-form">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" placeholder="Введите ваше имя"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Введите ваш email"><br><br>
+
+    <button type="submit">Отправить</button>
+  </form>
+  <div id="message"></div>
+
+  <script src="script.js"></script> 
+</body>
+</html>
