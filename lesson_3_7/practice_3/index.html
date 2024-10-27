@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить отзыв</title>
+</head>
+<body>
+    <h1>Добавить отзыв о товаре</h1>
+    <form method="POST" action="process.php">
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="review">Ваш отзыв:</label><br>
+        <textarea id="review" name="review" rows="4" required></textarea><br><br>
+
+        <label for="rating">Рейтинг (1-5):</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+        <input type="submit" value="Добавить отзыв">
+    </form>
+
+    <hr>
+    <h2>Отзывы:</h2>
+    <div id="reviews">
+        <!-- Отзывы будут отображены здесь -->
+        <?php
+        session_start();
+
+        // Проверка, существуют ли отзывы в сессии
+        if (isset($_SESSION['reviews'])) {
+            foreach ($_SESSION['reviews'] as $review) {
+                echo "<p><strong>{$review['name']} (Рейтинг: {$review['rating']}):</strong><br>{$review['review']}</p>";
+            }
+        } else {
+            echo "<p>Пока нет отзывов.</p>";
+        }
+        ?>
+    </div>
+</body>
+</html>
