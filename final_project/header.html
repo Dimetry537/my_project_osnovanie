@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Homeseller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/image/logo.png"
+            alt="Mister Homeseller logo"
+            width="200">
+        </div>
+        <h1 class="header__title">Твой дом всегда будет чистым</h1>
+    </header>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Домой</a></li>
+            <li class="nav__item"><a href="#" class="nav__link" id="loginBtn">Login</a></li>
+            <li class="nav__item"><a href="shop.html" class="nav__link">Наш магазин</a></li>
+            <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход</h2>
+            <form>
+                <label for="username">Имя пользователя:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
